@@ -454,3 +454,72 @@ footer {
   padding: 1rem;
   background: #020c1b;
 }
+
+/* ========== RESPONSIVE FIXES FOR TABLET & MOBILE ========== */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .typewriter-group {
+    font-size: 2.5rem;
+  }
+
+  .brief-intro {
+    font-size: 1rem;
+    max-width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technical-skills,
+  .professional-skills {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-info {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-img .image-ring {
+    width: 280px;
+    height: 280px;
+  }
+
+  .download-resume {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .contact form {
+    padding: 1rem;
+  }
+
+  .typewriter-group {
+    font-size: 2rem;
+  }
+
+  .about-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
